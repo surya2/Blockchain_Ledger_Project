@@ -222,7 +222,7 @@ def validate():
         return True
 
 def process(arg, index):
-    arg_lower = arg.lower()
+    arg_lower = arg.lower().strip('-')
     if arg_lower == 'name':
         print("SurjaCoin (TM)")
     elif arg_lower == "genesis":
